@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Tomcat 9系は javax.servlet を利用
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+
+    // JSPで使うJSTL
+    implementation 'javax.servlet:jstl:1.2'
+
+    // JDBCドライバ（例：PostgreSQL）
+    implementation 'org.postgresql:postgresql:42.7.3'
+}
+
+tasks.named('war') {
+    archiveFileName = 'MyWebApp.war'
+}

@@ -1,0 +1,34 @@
+# Eclipse metadata
+.classpath
+.project
+.settings/
+.metadata/
+
+# Build output
+/bin/
+/build/
+/out/
+/target/
+
+# Gradle
+.gradle/
+!gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Tomcat/Eclipse WTP deployment
+wtpwebapps/
+tmp/
+
+# Logs
+*.log
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# IDE-specific
+.vscode/
+.idea/
+
+# WAR files (生成物はGitHubに上げない)
+*.war
