@@ -21,3 +21,9 @@ dependencies {
 tasks.named('war') {
     archiveFileName = 'MyWebApp.war'
 }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
